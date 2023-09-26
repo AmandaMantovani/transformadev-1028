@@ -1,9 +1,21 @@
-﻿namespace Academia
+﻿using Aula1;
+
+namespace Academia
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            //Aula2
+            Garrafa garrafa = new Garrafa(); //internal
+            garrafa.cor = "preto"; // private
+            garrafa.capacidade = 750; // protected
+            garrafa.material = "plastico"; //public
+            garrafa.termica = true; //public
+
+            Peso peso = new(); // public
+            peso.capacidadeMaxima = 10; //internal
+            peso.tipo = "Halter"; // public
 
             /*
                 Objetos:

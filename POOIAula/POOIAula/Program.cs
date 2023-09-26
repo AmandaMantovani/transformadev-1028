@@ -1,14 +1,21 @@
-﻿namespace POOIAula
+﻿using Aula1;
+
+namespace POOIAula
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Garrafa garrafa = new Garrafa();
-            garrafa.cor = "preto";
-            garrafa.material = "plastico";
-            garrafa.termica = true;
-            garrafa.capacidade = 750;
+            //Aula1 que possui as classes Garrafa e Peso
+            Garrafa garrafa = new Garrafa(); //internal
+            garrafa.cor = "preto"; // private
+            garrafa.capacidade = 750; // protected
+            garrafa.material = "plastico"; //public
+            garrafa.termica = true; //public
+
+            Peso peso = new(); // public
+            peso.capacidadeMaxima = 10; //internal
+            peso.tipo = "Halter"; // public
 
             Garrafa garrafa2 = new();
             garrafa2.cor = "rosa";

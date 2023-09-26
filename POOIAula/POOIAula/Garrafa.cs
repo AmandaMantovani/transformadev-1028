@@ -10,8 +10,8 @@ namespace POOIAula
     internal class Garrafa
     {
         //caracteristica -> atributo ou field ou campo
-        public string cor;
-        public int capacidade;
+        private string cor;
+        protected int capacidade;
         public string material;
         public bool termica;
         
