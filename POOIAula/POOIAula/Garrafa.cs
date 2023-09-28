@@ -14,7 +14,16 @@ namespace POOIAula
         protected int capacidade;
         public string material;
         public bool termica;
-        
+
         //comportamentos
+
+        public void DeterminarTermica()
+        {
+            termica = true;
+        }
+        public void DeterminarNaoTermica()
+        {
+            termica = false;
+        }
     }
 }
