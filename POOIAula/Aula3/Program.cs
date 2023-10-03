@@ -40,7 +40,7 @@
             Console.WriteLine("Digite o valor 2:");
             double valor2 = double.Parse(Console.ReadLine());
 
-            Calculadora calculadora1 = new();
+            Calculadora calculadora = new();
             Calculadora calculadora2 = new(valor1);
             Calculadora calculadora3 = new(valor1, valor2);
 
@@ -62,9 +62,10 @@
          * matrícula, nome, 2 notas de prova e 1 nota de trabalho.
          * Construa os seguintes métodos para esta classe:
          * métodos construtores,
-         *  registrar nota de cada prova e trabalho,
-         *   calcula a média final do aluno (cada prova tem peso 2,5 e o trabalho tem peso 2).
+         * registrar nota de cada prova e trabalho,
+         * calcula a média final do aluno (cada prova tem peso 2,5 e o trabalho tem peso 2).
          * Teste na main, se atente para o que precisar ser public, private, parametros, retornos.. 
+         * Coloque o summary nos métodos e explique sua funcionalidade
         */
         
         /// <summary>
