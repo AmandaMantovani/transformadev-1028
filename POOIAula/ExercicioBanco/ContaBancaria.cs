@@ -60,7 +60,7 @@ namespace ExercicioBanco
             }
         }
 
-        public bool VerificarAgenciaGerente(int agencia, Gerente gerente)
+        private bool VerificarAgenciaGerente(int agencia, Gerente gerente)
         {
             if (agencia != gerente.Agencia)
             {
