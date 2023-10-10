@@ -30,6 +30,14 @@
 
         public int CapacidadePassageiros { get; set; }
         public double VelocidadeMaxima { get; set; }
+        
+        public Veiculo(string condutor, string combustivel, int capacidade, double velocidade)
+        {
+            this.Condutor = condutor;
+            this.Combustivel = combustivel;
+            this.CapacidadePassageiros = capacidade;
+            this.VelocidadeMaxima = velocidade;
+        }
 
         public void Imprimir()
         {

@@ -6,6 +6,14 @@
         public int QuantidadePortas { get; set; }
         public string Direcao { get; set; }
 
+        public Carro(string condutorCC, string combustivel, int capacidade, double velocidade,
+            bool cambio, int quantidade, string direcao) : base(condutorCC, combustivel, capacidade, velocidade)
+        {
+            this.CambioAutomatico = cambio;
+            this.QuantidadePortas = quantidade;
+            this.Direcao = direcao;
+        }
+
         public void TestePrivateProtected()
         {
             // acesso private
