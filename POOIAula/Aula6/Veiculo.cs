@@ -46,5 +46,20 @@
             Console.WriteLine($"Capacidade Passageiros: {this.CapacidadePassageiros}");
             Console.WriteLine($"Velocidade máxima: {this.VelocidadeMaxima}km/h");
         }
+
+        public virtual void Mover()
+        {
+            Console.WriteLine("Estou movimentando o veiculo - classe pai");
+        }
+
+        public virtual void Parar()
+        {
+            Console.WriteLine("Estou parando o veiculo - classe pai");
+        }
+
+        public void RemoverMotor()
+        {
+            Console.WriteLine("Removendo motor");
+        }
     }
 }

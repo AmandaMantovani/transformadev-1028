@@ -1,6 +1,6 @@
 ﻿namespace Aula6
 {
-    public class Carro : Veiculo
+    public sealed class Carro : Veiculo
     {
         public bool CambioAutomatico { get; set; }
         public int QuantidadePortas { get; set; }
@@ -25,14 +25,15 @@
             this.Combustivel = "Teste2";
         }
 
-        public void Acelerar()
+        public override void Mover()
         {
-            Console.WriteLine("Acelerando o Carro");
+            //base.Mover(); caso eu queira q a classe pai seja executada também
+            Console.WriteLine("Acelerando o carro - classe filho");
         }
 
-        public void Freiar()
+        public override void Parar()
         {
-            Console.WriteLine("Freiando o carro");
+            Console.WriteLine("Freiando o carro - classe filho");
         }
     }
 }

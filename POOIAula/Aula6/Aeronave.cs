@@ -28,7 +28,12 @@
             Console.WriteLine("Estamos voando!!!");
         }
 
-        public void ImprimirAero()
+        public sealed override void Mover()
+        {
+            Console.WriteLine("Movendo aeronave");
+        }
+
+        public new void Imprimir()
         {
             base.Imprimir();
             //this. do pai
